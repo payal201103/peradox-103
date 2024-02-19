@@ -1,0 +1,223 @@
+JS Variable
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        let x = 5;
+        let y = 6;
+        let z = x + y;
+        document.getElementById("demo").innerHTML =
+            " z : " + z;
+    </script>
+    <p id="class"></p>
+    <script>
+        var P = 5;
+        var R = 6;
+        var Q = P + R;
+        document.getElementById("class").innerHTML =
+            " z : " + Q;
+    </script>
+    <script>
+        let a = 5;
+        let b = 3;
+
+        // addition
+        console.log('x + y = ', a + b);
+
+        // subtraction
+        console.log('x - y = ', a - b);
+
+        // multiplication
+        console.log('x * y = ', a * b);
+
+        // division
+        console.log('x / y = ', a / b);
+
+        // remainder -->
+        console.log('x % y = ', a % b);
+
+        // increment
+        console.log('++x = ', ++a);
+        console.log('x++ = ', a++);
+        console.log('x = ', a);
+
+        // decrement
+        console.log('--x = ', --a);
+        console.log('x-- = ', a--);
+        console.log('x = ', a);
+
+        //exponentiation
+        console.log('x ** y =', a ** b);
+    </script>
+    <script>
+        // logical AND
+        console.log(true && true);
+        console.log(true && false);
+
+        // logical OR
+        console.log(true || false);
+
+        // logical NOT
+        console.log(!true);
+    </script>
+    <script>
+        //strings example
+        const name = 'ram';
+        const name1 = "hari";
+        const result = `The names are ${name} and ${name1}`;
+
+        //number example
+        const number1 = 3 / 0;
+        console.log(number1);
+        const number2 = -3 / 0;
+        console.log(number2);
+        const number3 = "abc" / 3;
+        console.log(number3);
+
+        //boolean
+        const dataChecked = true;
+        const valueCounted = false;
+
+    </script>
+
+
+    <script>
+        //for loop
+        const n = 5;
+        for (let i = 1; i <= n; i++) {
+            console.log(`I love JavaScript.`);
+        }
+
+        // while loop 
+
+        let i = 1, m = 5;
+        while (i <= m) {
+            console.log(i);
+            i += 1;
+        }
+        // Do while loop
+        let p = 1;
+        const s = 5;
+        do {
+            console.log(p);
+            i++;
+        } while (p <= n);
+
+        // If element
+        const number = prompt("Enter a number: ");
+        if (number > 0) {
+            console.log("The number is positive");
+        }
+        console.log("The if statement is easy");
+
+        //If ...else element
+        const value = prompt("Enter a number: ");
+        if (value > 0) {
+            console.log("The value is positive");
+        }
+        else {
+            console.log("The value is either a negative value or 0");
+        }
+        console.log("The if...else statement is easy");
+
+        //break 
+        for (let i = 1; i <= 5; i++) {
+            if (i == 3) {
+                break;
+            }
+            console.log(i);
+        }
+
+        //continue
+        for (let i = 1; i <= 5; i++) {
+            if (i == 3) {
+                continue;
+            }
+            console.log(i);
+        } 
+    </script>
+
+    <script>
+
+
+
+       // switch case
+             var day = 3;
+
+            switch (day) {
+                case 0:
+                    document.write("Today is Monday");
+                    break;
+                case 1:
+                    document.write("Today is Tuesday");
+                    break;
+                case 2:
+                    document.write("Today is Wednesday");
+                    break;
+                case 3:
+                    document.write("Today is Thursday");
+                    break;
+                case 4:
+                    document.write("Today is Friday");
+                    break;
+                case 5:
+                    document.write("Today is Saturday");
+                    break;
+                case 6:
+                    document.write("Today is Sunday");
+                    break;
+                default:
+                    document.write("Enter the valid week Day");
+            }
+
+            var age = 15;
+            switch (true) {
+                case (age >= 15 && a <= 20):
+                    document.write("you are Eligible");
+                    break;
+                case (age >= 21 && a <= 30):
+                    document.write("you are not Eligible");
+                    break;
+                default:
+                    document.write("Enter the valid Age");
+            }
+        </script>
+
+     <!-- make a Calculator -->
+
+    <script>
+            var num1 = prompt("enter 1st num");
+            var num2 = prompt("enter 2nd num");
+            var opr = prompt("enter arthmatic Operator");
+            switch (opr) {
+                case "+":
+                    document.write(num1 + num2);
+                    break;
+                case "-":
+                    document.write(num1 + num2);
+                    break;
+                case "*":
+                    document.write(num1 + num2);
+                    break;
+                case "/":
+                    document.write(num1 + num2);
+                    break;
+                case "/":
+                    document.write(num1 + num2);
+                    break;
+                default:
+                    document.write("please Enter Again");
+            }
+    </script>
+
+</body>
+
+</html>
